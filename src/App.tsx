@@ -1,19 +1,24 @@
-import React from 'react';
-import {Routes, Route } from 'react-router-dom';
-import About from './about';
+import { useEffect, useState } from 'react';
 import Home from './home/index'
-import Learn from './learn';
+import api from "./api.js"
 
-function App() {
-  return (
-    <div className="App">
-        <Routes>
-            <Route  path="/" element={<Home />} />
-            <Route  path="/sobre" element={<About />} />
-            <Route  path="/quemsou" element={<Learn />} />
-        </Routes>
-    </div>
-  );
-}
 
-export default App;
+export default function App() {
+  const [message, setMessage] = useState();
+
+    useEffect(() => {
+       api
+        .get("/mensagem")
+        .then((response) => setMessage(response.data))
+        .catch((err) => {
+          console.error("ops! ocorreu um erro" + err);
+        });
+    }, []);
+    console.log(message)
+    return (
+      <div className="App">
+          <Home/>
+      </div>
+    );
+  }
+

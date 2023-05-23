@@ -1,0 +1,15 @@
+.timerBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-direction: column;
+    color: white;
+}
+button {
+    padding: 10px;
+    margin: 1em;
+}
+.occults {
+    display: none;
+}

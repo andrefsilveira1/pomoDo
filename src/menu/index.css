@@ -1,0 +1,17 @@
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color: gray;
+    transition: all 100ms ease;
+}
+
+.carrossel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login {
+    float: right;
+}

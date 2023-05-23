@@ -10,6 +10,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import { BrowserRouter } from 'react-router-dom';
 import Menu from './menu';
+import Footer from './footer';
+
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -19,6 +21,7 @@ root.render(
     <BrowserRouter>
       <Menu/>
       <App/>
+      <Footer/>
     </BrowserRouter>
   </React.StrictMode>
 );

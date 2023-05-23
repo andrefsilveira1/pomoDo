@@ -1,12 +1,12 @@
 import React from 'react'
-import Menu from '../menu/index'
+import Header from './header/header';
+import Timer from './Timer/timer';
 
 function Home() {
     return (
         <>
-        <h1>
-            Home é aqui
-        </h1>
+        <Timer/>
+        <Header/>
         </>
     )
 }

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+.box {
+    height: 200px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    background: rgba(31, 30, 30, 0.8);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 3em;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+}
+
+.minutesBox {
+    display: flex;
+}
+
+.secondsBox {
+    display: flex;
+}
+
+.number {
+    font-size: 8em;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    margin: 4px;
+}

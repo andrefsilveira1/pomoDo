@@ -1,0 +1,28 @@
+.gradient-custom-2 {
+    background: linear-gradient(to right, #916397, #5001aa);
+}
+
+@media (min-width: 768px) {
+    .gradient-form {
+        height: 100vh !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .gradient-custom-2 {
+        border-top-right-radius: .3rem;
+        border-bottom-right-radius: .3rem;
+    }
+}
+
+.full-card {
+    opacity: 0;
+    transition: opacity 1.4s linear;
+}
+
+.full-card-off {
+    opacity: 1;
+}
+
+
+
